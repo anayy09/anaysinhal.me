@@ -1,0 +1,37 @@
+@import "../../_globalColor";
+
+.dev-icons {
+  padding-left: 0;
+  list-style: none;
+  font-size: 3rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.software-skill-inline {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  > i,
+  > img.software-skill-svg {
+    color: $subTitle;
+    fill: $subTitle;
+
+    &:hover {
+      color: $skillsColor;
+      fill: $skillsColor;
+    }
+  }
+
+  > p {
+    color: $subTitle;
+    font-size: 10px;
+  }
+
+  > i:hover ~ p,
+  > img.software-skill-svg:hover ~ p {
+    color: $skillsColor;
+  }
+}
