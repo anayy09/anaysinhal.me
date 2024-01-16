@@ -141,6 +141,17 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
+      schoolName: "Indian Institute of Technology Kanpur",
+      logo: require("./assets/images/IITK.png"),
+      subHeader: "Non-Degree Student - Computer Science and Engineering",
+      duration: "January 2024 - May 2024",
+      desc: "I was selected to spend a semester at the esteemed IITK.",
+      descBullets: [
+        "Studied Computer Science courses such as Computer Networks and Big Data Visual Analytics.",
+        "Explored additional subjects including Brand Management and Strategic Marketing.",
+      ],
+    },
+    {
       schoolName: "Indian Institute of Technology Gandhinagar",
       logo: require("./assets/images/IITGN.png"),
       subHeader: "Visiting Student - Computer Science",
@@ -222,6 +233,16 @@ const workExperiences = {
         "Interacted directly with clients.",
         "Collaborated effectively within the team.",
         "Acquired valuable insights into the software development lifecycle.",
+      ],
+    },
+    {
+      role: "Research Intern",
+      company: "Indian Institute of Technology Jammu",
+      companylogo: require("./assets/images/IITJammu.png"),
+      date: "December 2023 – Jan 2024",
+      desc: "Engaged in a research project under the guidance of Dr. Subhasis Bhattacharjee, Assistant Professor, Deptt. of Computer Sci. & Engg., IIT Jammu.",
+      descBullets: [
+        "Project title: Optimizing Stress Prediction with Wearable Sensor Data: A Comprehensive Approach Through Advanced Machine Learning Techniques",
       ],
     },
     // {
