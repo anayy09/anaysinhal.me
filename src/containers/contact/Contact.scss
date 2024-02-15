@@ -198,7 +198,7 @@
   .contact-myimage-mobile > img {
     display: block;
     margin: 0 auto;
-    width: 75%;
+    width: 25%;
     height: auto;
     border-radius: 50%;
     border: 5px solid $headerHoverBG;
@@ -208,5 +208,12 @@
   .contact-form {
     width: 250px;
     margin: 0 auto;
+  }
+}
+
+// write media query for screen size max 768, specificall for the contact-myimage-mobile
+@media (max-width: 426px) {
+  .contact-myimage-mobile > img {
+    width: 75%;
   }
 }
