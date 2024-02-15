@@ -1,29 +1,31 @@
-import {useState, useEffect, useContext} from "react";
+import { useState, useEffect, useContext } from "react";
 import "./Blog.scss";
 import BlogCard from "../../components/blogCard/BlogCard";
-import {blogSection} from "../../portfolio";
-import {Fade} from "react-reveal";
+import { blogSection } from "../../portfolio";
+import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 import Button from "../../components/button/Button";
 
 // Import the fetchBlogs function from the new module
-import {fetchBlogs} from "./fetchBlogs"; // Update the path accordingly
+import { fetchBlogs } from "./fetchBlogs"; // Update the path accordingly
 
 export default function Blogs() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   const [hashnodeBlogs, setHashnodeBlogs] = useState([]);
 
   useEffect(() => {
     const getHashnodeBlogs = async () => {
+      // Inside useEffect in Blogs.js
       try {
-        const response = await fetchBlogs("anay09"); // Your Hashnode username
-        setHashnodeBlogs(response);
+        const response = await fetchBlogs("anay09"); // Ensure username is correct
+        if (response && response.length > 0) {
+          setHashnodeBlogs(response);
+        } else {
+          console.log("No blogs found or empty response");
+        }
       } catch (error) {
-        console.error(
-          `${error} (because of this error Blogs section could not be displayed. Blogs section has reverted to default)`
-        );
-        setHashnodeBlogs("Error");
-        blogSection.displayMediumBlogs = "false";
+        console.error("Failed to fetch blogs:", error);
+        setHashnodeBlogs([]);
       }
     };
 
@@ -59,7 +61,7 @@ export default function Blogs() {
                     url: `https://codecanvas.tech/${blog.slug}`,
                     image: blog.coverImage,
                     title: blog.title,
-                    description: blog.brief
+                    description: blog.brief,
                   }}
                 />
               ))

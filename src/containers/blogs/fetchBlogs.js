@@ -1,52 +1,45 @@
-export const fetchBlogs = async (username) => {
-  const GET_USER_BLOGS = `
-    query GetUserArticles($page: Int!) {
-        user(username: "${username}") {
-            publication {
-                posts(page: $page) {
-                  title
-                  brief
-                  slug
-                  dateAdded
-                  coverImage
-                }
+export const fetchBlogs = async () => {
+  const GET_PUBLICATION_BLOGS = `
+    query Publication {
+      publication(host: "codecanvas.tech") {
+        isTeam
+        title
+        posts(first: 10) {
+          edges {
+            node {
+              title
+              brief
+              url
             }
+          }
         }
+      }
     }
   `;
 
-  let allBlogsFetched = false;
-  let page = 0;
-  const articles = [];
-
-  while (!allBlogsFetched) {
-    try {
-      const response = await gql(GET_USER_BLOGS, { page: page });
-      const posts = response.data.user.publication.posts;
-      if (posts.length === 0) {
-        allBlogsFetched = true;
-      } else {
-        articles.push(...posts);
-        page++;
-      }
-    } catch (error) {
-      throw new Error("Failed to fetch Hashnode blogs.");
-    }
+  try {
+    const response = await gql(GET_PUBLICATION_BLOGS);
+    const posts = response.data.publication.posts.edges.map(
+      (edge) => edge.node
+    );
+    return posts;
+  } catch (error) {
+    console.error("Error fetching blogs:", error);
+    throw new Error("Failed to fetch Hashnode blogs.");
   }
-
-  return articles;
 };
 
-async function gql(query, variables = {}) {
-  const data = await fetch("https://api.hashnode.com/", {
+async function gql(query) {
+  const data = await fetch("https://gql.hashnode.com/", {
     method: "POST",
     headers: {
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
+      // Include Authorization header if needed for your query
+      // "Authorization": "Bearer YOUR_PERSONAL_ACCESS_TOKEN"
     },
     body: JSON.stringify({
       query,
-      variables
-    })
+    }),
   });
 
   return data.json();
