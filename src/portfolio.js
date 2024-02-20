@@ -25,8 +25,7 @@ const greeting = {
   subTitle: emoji(
     "🚀 I'm a 3rd Year CSE undergrad excelling as a Full Stack Developer, UI-UX Designer, and AI-ML Enthusiast. I bring experience in ReactJS, Flutter, Laravel, Figma, and more to create digital brilliance through code and design."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1OBCXdGRHLDdU9L7AaKrEtD8lI56lki2l/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "https://anayy09.github.io/cv", // Set to empty to hide the button
   displayGreeting: true, // Set false to hide this section, defaults to true
 };
 
