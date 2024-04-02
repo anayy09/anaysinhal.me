@@ -276,15 +276,35 @@ const bigProjects = {
   subtitle: "EXPLORE MY TECH PROJECTS",
   projects: [
     {
+      image: require("./assets/images/stress.png"),
+      projectName: "Stress Detection using Wearable Sensors",
+      projectDesc:
+        "Analyzed physiological data with ML algorithms (RF, XGB, MLP, Stacking), enhancing accuracy.",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/anayy09/Stress-Prediction-using-Wearable-Sensors",
+        },
+      ],
+    },
+    {
+      image: require("./assets/images/iot.png"),
+      projectName: "IoT-based Health Monitoring System",
+      projectDesc:
+        "Engineered an IoT solution with NodeMCU ESP8266 and MAX30100 for health monitoring.",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/anayy09/anaysinhal.me",
+        },
+      ],
+    },
+    {
       image: require("./assets/images/portfolio.png"),
       projectName: "Personal Portfolio",
       projectDesc:
         "A personal portfolio website built using ReactJS with Hashnode API and EmailJS integration.",
       footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://anaysinhal.me/",
-        },
         {
           name: "GitHub",
           url: "https://github.com/anayy09/anaysinhal.me",
@@ -315,18 +335,18 @@ const bigProjects = {
         },
       ],
     },
-    {
-      image: require("./assets/images/waterdisp.png"),
-      projectName: "Automatic Water Dispenser",
-      projectDesc:
-        "An Automatic Water Dispenser implemented using the Microprocessor MSP430 Lunchbox.",
-      footerLink: [
-        {
-          name: "GitHub",
-          url: "https://github.com/anayy09/College_Projects/tree/main/Automatic%20Water%20%20Dispenser",
-        },
-      ],
-    },
+    // {
+    //   image: require("./assets/images/waterdisp.png"),
+    //   projectName: "Automatic Water Dispenser",
+    //   projectDesc:
+    //     "An Automatic Water Dispenser implemented using the Microprocessor MSP430 Lunchbox.",
+    //   footerLink: [
+    //     {
+    //       name: "GitHub",
+    //       url: "https://github.com/anayy09/College_Projects/tree/main/Automatic%20Water%20%20Dispenser",
+    //     },
+    //   ],
+    // },
   ],
   display: true, // Set false to hide this section, defaults to true
 };
@@ -410,7 +430,7 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+91-7987594952",
-  email_address: "anay.sinhal@aol.com",
+  email_address: "anaysinhal@proton.me",
 };
 
 // Twitter Section
