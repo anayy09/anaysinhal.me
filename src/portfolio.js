@@ -295,7 +295,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "GitHub",
-          url: "https://github.com/anayy09/anaysinhal.me",
+          url: "https://github.com/anayy09/IoT-Based-Health-Monitoring-System",
         },
       ],
     },
