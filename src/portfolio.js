@@ -25,8 +25,8 @@ const greeting = {
   subTitle: emoji(
     "🚀 I'm a 3rd Year CSE undergrad excelling as a Full Stack Developer, UI-UX Designer, and AI-ML Enthusiast. I bring experience in ReactJS, Flutter, Laravel, Figma, and more to create digital brilliance through code and design."
   ),
-  resumeLink: "https://anaysinhalcv.netlify.app/", // Set to empty to hide the button
-  displayGreeting: true, // Set false to hide this section, defaults to true
+  resumeLink: "/resume",
+  displayGreeting: true,
 };
 
 // Social Media Links

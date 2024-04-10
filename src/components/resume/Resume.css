@@ -1,0 +1,64 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.center-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+iframe {
+    width: 100%;
+    height: 100vh;
+    border: none;
+}
+
+.mobile-image {
+    width: 100%;
+    height: auto;
+    display: none;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.download-button {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(25, 118, 210);
+    color: white;
+    cursor: pointer;
+    outline: none;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-button i {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    iframe {
+        display: none;
+    }
+
+    .mobile-image {
+        display: block;
+    }
+}
