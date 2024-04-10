@@ -168,8 +168,9 @@ const educationInfo = {
       duration: "July 2021 - Present",
       desc: "Currently in the third year, I am passionately pursuing my education in the field of Computer Science.",
       descBullets: [
-        "Serving as a Student Placement Coordinator",
-        "Actively participating as a member of IIC-JKLU (Institution's Innovation Council - JKLU)",
+        "In the Honor's List for Meritorious Academic Performance [8.74/10 CGPA]",
+        "Served as a Student Placement Coordinator",
+        "Member of IIC-JKLU (Institution's Innovation Council - JKLU)",
       ],
     },
     {
