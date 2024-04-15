@@ -10,7 +10,11 @@ export default function Footer() {
     <Fade bottom duration={1000} distance="5px">
       <div className="footer-div" style={{ textAlign: "center" }}>
         <p
-          className={isDark ? "dark-mode footer-text small-text" : "footer-text small-text"}
+          className={
+            isDark
+              ? "dark-mode footer-text small-text"
+              : "footer-text small-text"
+          }
         >
           {emoji("Developed with ❤️ by Anay on ")}
           <a
@@ -27,6 +31,15 @@ export default function Footer() {
           geography. I believe in blending the art of programming with the
           wonders of our universe, making every line of code a journey rather
           than a task."
+        </p>
+        <p>
+          <a
+            href="https://github.com/anayy09/anaysinhal.me"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Source Code
+          </a>
         </p>
       </div>
     </Fade>
