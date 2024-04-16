@@ -301,6 +301,18 @@ const bigProjects = {
       ],
     },
     {
+      image: require("./assets/images/patch.png"),
+      projectName: "Substance Use Disorder Treatment",
+      projectDesc:
+        "Developed an innovative solution for monitoring and treating substance use disorders, involving a wearable patch and a mobile app.",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/anayy09/Substance-Use-Disorder-Treatment",
+        },
+      ],
+    },
+    {
       image: require("./assets/images/portfolio.png"),
       projectName: "Personal Portfolio",
       projectDesc:
