@@ -368,32 +368,108 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle: "",
+  title: emoji("Certifications"),
+  subtitle: " Some Certifications that I have done !",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      imageAlt: "Google Code-In Logo",
+      title: "Master C Programming with Data Structures",
+      subtitle: "GeeksForGeeks",
+      image: require("./assets/images/gfg.png"),
+      imageAlt: "GeeksForGeeks Logo",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing",
+          url: "https://media.geeksforgeeks.org/courses/certificates/bf1bc6cb5a008775c8b6eb73d10f0008.pdf",
         },
+      ],
+    },
+    {
+      title: "AWS Cloud Technical Essentials",
+      subtitle: "Amazon Web Services",
+      image: require("./assets/images/aws.png"),
+      imageAlt: "AWS Logo",
+      footerLink: [
         {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing",
+          name: "Certification",
+          url: "https://www.coursera.org/account/accomplishments/certificate/P4BUJUM2RYW8",
         },
+      ],
+    },
+    {
+      title: "Foundations of User Experience (UX) Design",
+      subtitle: "Google",
+      image: require("./assets/images/google.jpg"),
+      imageAlt: "Google Logo",
+      footerLink: [
         {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html",
+          name: "Certification",
+          url: "https://www.coursera.org/account/accomplishments/certificate/52FMF94HS9HK",
+        },
+      ],
+    },
+    {
+      title: "Linear Regression with NumPy and Python",
+      subtitle: "Coursera",
+      image: require("./assets/images/coursera1.png"),
+      imageAlt: "Coursera Logo",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://www.coursera.org/account/accomplishments/certificate/UYLH9EEE75YX",
+        },
+      ],
+    },
+    {
+      title: "Modern Web Development",
+      subtitle: "Sheriyans Coding School",
+      image: require("./assets/images/sheriyans.jpeg"),
+      imageAlt: "Sheriyans Logo",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1iCZ5iEDncL1XIjYUlYW1UzCgznnqmdaI/view?usp=share_link",
+        },
+      ],
+    },
+    {
+      title: "What is Metaverse",
+      subtitle: "Meta",
+      image: require("./assets/images/meta.png"),
+      imageAlt: "Meta Logo",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://www.coursera.org/account/accomplishments/certificate/2AAKFTPVWGUN",
+        },
+      ],
+    },
+    {
+      title: "C for Everyone",
+      subtitle: "University of California, Santa Cruz",
+      image: require("./assets/images/ucsc.jpg"),
+      imageAlt: "UC Logo",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://www.coursera.org/account/accomplishments/certificate/DTPB6YFVET8Y",
+        },
+      ],
+    },
+    {
+      title: "Virtual Reality Specialization",
+      subtitle: "Coursera",
+      image: require("./assets/images/coursera1.png"),
+      imageAlt: "Coursera Logo",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://www.coursera.org/account/accomplishments/specialization/certificate/T88EKHWMMHDF",
         },
       ],
     },
   ],
-  display: false, // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
 };
 
 // Blogs Section

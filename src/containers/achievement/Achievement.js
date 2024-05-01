@@ -4,6 +4,7 @@ import AchievementCard from "../../components/achievementCard/AchievementCard";
 import {achievementSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import Button from "../../components/button/Button";
 export default function Achievement() {
   const {isDark} = useContext(StyleContext);
   if (!achievementSection.display) {
@@ -44,12 +45,19 @@ export default function Achievement() {
                     description: card.subtitle,
                     image: card.image,
                     imageAlt: card.imageAlt,
-                    footer: card.footerLink
+                    footer: card.footerLink,
                   }}
                 />
               );
             })}
           </div>
+        </div>
+        <div className="button-blogs-div">
+          <Button
+            text="View More"
+            newTab={true}
+            href="https://www.playbook.com/s/anay/3Ee73MhKoJvUUMCf6k62oBhH"
+          />
         </div>
       </div>
     </Fade>

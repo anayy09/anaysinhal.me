@@ -3,6 +3,7 @@ import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import Button from "../../components/button/Button";
 
 export default function StartupProject() {
   function openUrlInNewTab(url) {
@@ -87,6 +88,13 @@ export default function StartupProject() {
               );
             })}
           </div>
+        </div>
+        <div className="button-blogs-div">
+          <Button
+            text="View More"
+            newTab={true}
+            href="https://github.com/anayy09?tab=repositories"
+          />
         </div>
       </div>
     </Fade>
