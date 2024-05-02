@@ -7,9 +7,9 @@ import StyleContext from "../../contexts/StyleContext";
 import Button from "../../components/button/Button";
 export default function Achievement() {
   const {isDark} = useContext(StyleContext);
-  // if (!achievementSection.display) {
-  //   return null;
-  // }
+  if (!achievementSection.display) {
+    return null;
+  }
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="achievements">

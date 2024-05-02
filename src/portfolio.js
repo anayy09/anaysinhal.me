@@ -376,7 +376,6 @@ const achievementSection = {
       title: "Master C Programming with Data Structures",
       subtitle: "GeeksForGeeks",
       image: require("./assets/images/gfg.png"),
-      imageAlt: "GeeksForGeeks Logo",
       footerLink: [
         {
           name: "Certification",
@@ -388,7 +387,6 @@ const achievementSection = {
       title: "AWS Cloud Technical Essentials",
       subtitle: "Amazon Web Services",
       image: require("./assets/images/aws.png"),
-      imageAlt: "AWS Logo",
       footerLink: [
         {
           name: "Certification",
@@ -400,7 +398,6 @@ const achievementSection = {
       title: "Foundations of User Experience (UX) Design",
       subtitle: "Google",
       image: require("./assets/images/google.jpg"),
-      imageAlt: "Google Logo",
       footerLink: [
         {
           name: "Certification",
@@ -412,7 +409,6 @@ const achievementSection = {
       title: "Linear Regression with NumPy and Python",
       subtitle: "Coursera",
       image: require("./assets/images/coursera1.png"),
-      imageAlt: "Coursera Logo",
       footerLink: [
         {
           name: "Certification",
@@ -424,7 +420,6 @@ const achievementSection = {
       title: "Modern Web Development",
       subtitle: "Sheriyans Coding School",
       image: require("./assets/images/sheriyans.jpeg"),
-      imageAlt: "Sheriyans Logo",
       footerLink: [
         {
           name: "Certification",
@@ -436,7 +431,6 @@ const achievementSection = {
       title: "What is Metaverse",
       subtitle: "Meta",
       image: require("./assets/images/meta.png"),
-      imageAlt: "Meta Logo",
       footerLink: [
         {
           name: "Certification",
@@ -448,7 +442,6 @@ const achievementSection = {
       title: "C for Everyone",
       subtitle: "University of California, Santa Cruz",
       image: require("./assets/images/ucsc.jpg"),
-      imageAlt: "UC Logo",
       footerLink: [
         {
           name: "Certification",
@@ -460,7 +453,6 @@ const achievementSection = {
       title: "Virtual Reality Specialization",
       subtitle: "Coursera",
       image: require("./assets/images/coursera1.png"),
-      imageAlt: "Coursera Logo",
       footerLink: [
         {
           name: "Certification",
