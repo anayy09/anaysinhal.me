@@ -53,7 +53,7 @@ export default function Blogs() {
         <div className="blog-main-div">
           <div className="blog-text-div">
             {hashnodeBlogs !== "Error" ? (
-              hashnodeBlogs.slice(0, 3).map((blog, i) => (
+              hashnodeBlogs.slice(0, 6).map((blog, i) => (
                 <BlogCard
                   key={i}
                   isDark={isDark}

@@ -23,7 +23,7 @@ const greeting = {
   username: "Anay Sinhal",
   title: "Hi all, I'm Anay",
   subTitle: emoji(
-    "🚀 I'm a 3rd Year CSE undergrad excelling as a Full Stack Developer, UI-UX Designer, and AI-ML Enthusiast. I bring experience in ReactJS, Flutter, Laravel, Figma, and more to create digital brilliance through code and design."
+    "🚀 I'm a Computer Science undergrad excelling as a Full Stack Developer and AI/ML Enthusiast. Experienced in ReactJS, Django, TensorFlow, Keras, and more, I create digital brilliance through code, design, and machine learning."
   ),
   resumeLink: "/resume",
   displayGreeting: true,
@@ -47,18 +47,15 @@ const skillsSection = {
   subTitle: "EXPLORING THE BOUNDLESS REALMS OF TECHNOLOGY STACKS",
   skills: [
     emoji(
-      "⚡ Creating Captivating Frontend Experiences for Web and Mobile Applications"
+      "⚡ Developing dynamic user interfaces and refining backend functionalities"
     ),
     emoji(
-      "⚡ Gaining hands-on experience in developing dynamic user interfaces and refining backend functionalities"
+      "⚡ Advancing towards mastering full stack development and UI/UX design"
     ),
     emoji(
-      "⚡ Steadily advancing towards mastering the intricate art of full stack development and UI-UX design"
+      "⚡ Specializing in AI/ML solutions with a focus on innovative problem-solving"
     ),
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
@@ -68,10 +65,6 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "css3",
       fontAwesomeClassname: "fab fa-css3-alt",
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass",
     },
     {
       skillName: "JavaScript",
@@ -86,10 +79,6 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-node",
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm",
-    },
-    {
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database",
     },
@@ -102,32 +91,8 @@ https://fontawesome.com/icons?d=gallery */
       svgPath: require("./assets/images/zoho.svg"),
     },
     {
-      skillName: "java", // New skill: Java
-      fontAwesomeClassname: "fab fa-java",
-    },
-    {
-      skillName: "springboot",
-      svgPath: require("./assets/images/spring-boot.svg"),
-    },
-    {
-      skillName: "php", // New skill: PHP
+      skillName: "php",
       fontAwesomeClassname: "fab fa-php",
-    },
-    {
-      skillName: "laravel", // New skill: Laravel
-      fontAwesomeClassname: "fab fa-laravel",
-    },
-    {
-      skillName: "figma", // New skill: Figma
-      fontAwesomeClassname: "fab fa-figma",
-    },
-    {
-      skillName: "blender",
-      svgPath: require("./assets/images/blender.svg"),
-    },
-    {
-      skillName: "unreal",
-      svgPath: require("./assets/images/unreal-engine.svg"),
     },
   ],
 
@@ -191,7 +156,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend", //Insert stack or technology you have experience in
@@ -214,7 +179,7 @@ const techStack = {
       progressPercentage: "70%",
     },
   ],
-  displayCodersrank: false, // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: true, // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Work experience section
@@ -223,26 +188,49 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Junior Software Developer (Intern)",
-      company: "Dexpert Systems Pvt. Ltd.",
+      role: "SDE Intern",
+      company: "Dexpert Systems, Pune",
       companylogo: require("./assets/images/Dexpert.png"),
       date: "June 2023 – July 2023",
-      desc: "Engaged in diverse software projects, gaining hands-on experience in technologies like Java Spring Boot, ReactJS, Zoho CRM, Java JSP, and PHP Laravel.",
+      desc: "Gained hands-on experience in Java Spring Boot, ReactJS, Zoho CRM, Java JSP, and PHP Laravel.",
       descBullets: [
-        "Contributed actively to real-time projects.",
-        "Interacted directly with clients.",
-        "Collaborated effectively within the team.",
-        "Acquired valuable insights into the software development lifecycle.",
+        "Contributed to real-time projects.",
+        "Interacted with clients.",
+        "Collaborated within the team.",
+        "Acquired insights into the software development lifecycle.",
       ],
     },
     {
-      role: "Research Intern",
-      company: "Indian Institute of Technology Jammu",
+      role: "Research Intern (ML)",
+      company: "IIT Jammu",
       companylogo: require("./assets/images/IITJammu.png"),
       date: "December 2023 – Jan 2024",
-      desc: "Engaged in a research project under the guidance of Dr. Subhasis Bhattacharjee, Assistant Professor, Deptt. of Computer Sci. & Engg., IIT Jammu.",
+      desc: "Worked on a research project under Dr. Subhasis Bhattacharjee, Assistant Professor, Dept. of CSE, IIT Jammu.",
       descBullets: [
-        "Project title: Optimizing Stress Prediction with Wearable Sensor Data: A Comprehensive Approach Through Advanced Machine Learning Techniques",
+        "Project: Optimizing Stress Prediction with Wearable Sensor Data using Advanced ML Techniques",
+      ],
+    },
+    {
+      role: "Research Intern (ML)",
+      company: "SVNIT Surat",
+      companylogo: require("./assets/images/SVNIT.png"),
+      date: "May 2024 – June 2024",
+      desc: "Worked on a research project under Dr. Bhavesh N. Gohil, Assistant Professor, Dept. of CSE, SVNIT Surat.",
+      descBullets: [
+        "Project: Depression Detection using AI and Machine Learning Techniques",
+      ],
+    },
+    {
+      role: "SDE Intern",
+      company: "GeeksforGeeks, Noida",
+      companylogo: require("./assets/images/geeks.png"),
+      date: "May 2024 – Present",
+      desc: "Gained hands-on experience in PHP, Vanilla JS, ReactJS, NextJS, and Django.",
+      descBullets: [
+        "Worked on feature improvements.",
+        "Handled internal arrangements.",
+        "Collaborated within the team.",
+        "Acquired insights into web development processes.",
       ],
     },
     // {
@@ -262,13 +250,6 @@ const workExperiences = {
   ],
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
-const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: false, // Set false to hide this section, defaults to true
-};
 
 // Some big projects you have worked on
 
@@ -280,7 +261,7 @@ const bigProjects = {
       image: require("./assets/images/stress.png"),
       projectName: "Stress Detection using Wearable Sensors",
       projectDesc:
-        "Analyzed physiological data with ML algorithms (RF, XGB, MLP, Stacking), enhancing accuracy.",
+      "Analyzed physiological data with ML algorithms (RF, XGB, MLP, Stacking), enhancing accuracy.",
       footerLink: [
         {
           name: "GitHub",
@@ -293,8 +274,8 @@ const bigProjects = {
       projectName: "IoT-based Health Monitoring System",
       projectDesc:
         "Engineered an IoT solution with NodeMCU ESP8266 and MAX30100 for health monitoring.",
-      footerLink: [
-        {
+        footerLink: [
+          {
           name: "GitHub",
           url: "https://github.com/anayy09/IoT-Based-Health-Monitoring-System",
         },
@@ -304,7 +285,7 @@ const bigProjects = {
       image: require("./assets/images/patch.png"),
       projectName: "Substance Use Disorder Treatment",
       projectDesc:
-        "Developed an innovative solution for monitoring and treating substance use disorders, involving a wearable patch and a mobile app.",
+      "Developed an innovative solution for monitoring and treating substance use disorders, involving a wearable patch and a mobile app.",
       footerLink: [
         {
           name: "GitHub",
@@ -317,8 +298,8 @@ const bigProjects = {
       projectName: "Personal Portfolio",
       projectDesc:
         "A personal portfolio website built using ReactJS with Hashnode API and EmailJS integration.",
-      footerLink: [
-        {
+        footerLink: [
+          {
           name: "GitHub",
           url: "https://github.com/anayy09/anaysinhal.me",
         },
@@ -328,7 +309,7 @@ const bigProjects = {
       image: require("./assets/images/solarsystem.png"),
       projectName: "Solar System in VR",
       projectDesc:
-        "A Solar System simulator in VR created using Unreal Engine 5 and Blender.",
+      "A Solar System simulator in VR created using Unreal Engine 5 and Blender.",
       footerLink: [
         {
           name: "Demo",
@@ -349,7 +330,7 @@ const bigProjects = {
       ],
     },
     // {
-    //   image: require("./assets/images/waterdisp.png"),
+      //   image: require("./assets/images/waterdisp.png"),
     //   projectName: "Automatic Water Dispenser",
     //   projectDesc:
     //     "An Automatic Water Dispenser implemented using the Microprocessor MSP430 Lunchbox.",
@@ -364,6 +345,13 @@ const bigProjects = {
   display: true, // Set false to hide this section, defaults to true
 };
 
+/* Your Open Source Section to View Your Github Pinned Projects
+To know how to get github key look at readme.md */
+
+const openSource = {
+  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  display: true, // Set false to hide this section, defaults to true
+};
 // Achievement Section
 // Include certificates, talks etc
 
@@ -511,7 +499,7 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+91-7987594952",
-  email_address: "anaysinhal@proton.me",
+  email_address: "anaysinhal.edu@gmail.com",
 };
 
 // Twitter Section
