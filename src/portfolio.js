@@ -179,35 +179,25 @@ const techStack = {
       progressPercentage: "70%",
     },
   ],
-  displayCodersrank: true, // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false, // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true, // Set it to true to show workExperiences Section
   experience: [
     {
       role: "SDE Intern",
-      company: "Dexpert Systems, Pune",
-      companylogo: require("./assets/images/Dexpert.png"),
-      date: "June 2023 – July 2023",
-      desc: "Gained hands-on experience in Java Spring Boot, ReactJS, Zoho CRM, Java JSP, and PHP Laravel.",
+      company: "GeeksforGeeks, Noida",
+      companylogo: require("./assets/images/geeks.png"),
+      date: "May 2024 – Present",
+      desc: "Gained hands-on experience in PHP, Vanilla JS, ReactJS, NextJS, and Django.",
       descBullets: [
-        "Contributed to real-time projects.",
-        "Interacted with clients.",
+        "Worked on feature improvements.",
+        "Handled internal arrangements.",
         "Collaborated within the team.",
-        "Acquired insights into the software development lifecycle.",
-      ],
-    },
-    {
-      role: "Research Intern (ML)",
-      company: "IIT Jammu",
-      companylogo: require("./assets/images/IITJammu.png"),
-      date: "December 2023 – Jan 2024",
-      desc: "Worked on a research project under Dr. Subhasis Bhattacharjee, Assistant Professor, Dept. of CSE, IIT Jammu.",
-      descBullets: [
-        "Project: Optimizing Stress Prediction with Wearable Sensor Data using Advanced ML Techniques",
+        "Acquired insights into web development processes.",
       ],
     },
     {
@@ -221,16 +211,26 @@ const workExperiences = {
       ],
     },
     {
-      role: "SDE Intern",
-      company: "GeeksforGeeks, Noida",
-      companylogo: require("./assets/images/geeks.png"),
-      date: "May 2024 – Present",
-      desc: "Gained hands-on experience in PHP, Vanilla JS, ReactJS, NextJS, and Django.",
+      role: "Research Intern (ML)",
+      company: "IIT Jammu",
+      companylogo: require("./assets/images/IITJammu.png"),
+      date: "December 2023 – Jan 2024",
+      desc: "Worked on a research project under Dr. Subhasis Bhattacharjee, Assistant Professor, Dept. of CSE, IIT Jammu.",
       descBullets: [
-        "Worked on feature improvements.",
-        "Handled internal arrangements.",
+        "Project: Optimizing Stress Prediction with Wearable Sensor Data using Advanced ML Techniques",
+      ],
+    },
+    {
+      role: "SDE Intern",
+      company: "Dexpert Systems, Pune",
+      companylogo: require("./assets/images/Dexpert.png"),
+      date: "June 2023 – July 2023",
+      desc: "Gained hands-on experience in Java Spring Boot, ReactJS, Zoho CRM, Java JSP, and PHP Laravel.",
+      descBullets: [
+        "Contributed to real-time projects.",
+        "Interacted with clients.",
         "Collaborated within the team.",
-        "Acquired insights into web development processes.",
+        "Acquired insights into the software development lifecycle.",
       ],
     },
     // {
@@ -250,7 +250,6 @@ const workExperiences = {
   ],
 };
 
-
 // Some big projects you have worked on
 
 const bigProjects = {
@@ -261,7 +260,7 @@ const bigProjects = {
       image: require("./assets/images/stress.png"),
       projectName: "Stress Detection using Wearable Sensors",
       projectDesc:
-      "Analyzed physiological data with ML algorithms (RF, XGB, MLP, Stacking), enhancing accuracy.",
+        "Analyzed physiological data with ML algorithms (RF, XGB, MLP, Stacking), enhancing accuracy.",
       footerLink: [
         {
           name: "GitHub",
@@ -274,8 +273,8 @@ const bigProjects = {
       projectName: "IoT-based Health Monitoring System",
       projectDesc:
         "Engineered an IoT solution with NodeMCU ESP8266 and MAX30100 for health monitoring.",
-        footerLink: [
-          {
+      footerLink: [
+        {
           name: "GitHub",
           url: "https://github.com/anayy09/IoT-Based-Health-Monitoring-System",
         },
@@ -285,7 +284,7 @@ const bigProjects = {
       image: require("./assets/images/patch.png"),
       projectName: "Substance Use Disorder Treatment",
       projectDesc:
-      "Developed an innovative solution for monitoring and treating substance use disorders, involving a wearable patch and a mobile app.",
+        "Developed an innovative solution for monitoring and treating substance use disorders, involving a wearable patch and a mobile app.",
       footerLink: [
         {
           name: "GitHub",
@@ -298,8 +297,8 @@ const bigProjects = {
       projectName: "Personal Portfolio",
       projectDesc:
         "A personal portfolio website built using ReactJS with Hashnode API and EmailJS integration.",
-        footerLink: [
-          {
+      footerLink: [
+        {
           name: "GitHub",
           url: "https://github.com/anayy09/anaysinhal.me",
         },
@@ -309,7 +308,7 @@ const bigProjects = {
       image: require("./assets/images/solarsystem.png"),
       projectName: "Solar System in VR",
       projectDesc:
-      "A Solar System simulator in VR created using Unreal Engine 5 and Blender.",
+        "A Solar System simulator in VR created using Unreal Engine 5 and Blender.",
       footerLink: [
         {
           name: "Demo",
@@ -330,7 +329,7 @@ const bigProjects = {
       ],
     },
     // {
-      //   image: require("./assets/images/waterdisp.png"),
+    //   image: require("./assets/images/waterdisp.png"),
     //   projectName: "Automatic Water Dispenser",
     //   projectDesc:
     //     "An Automatic Water Dispenser implemented using the Microprocessor MSP430 Lunchbox.",
@@ -349,7 +348,7 @@ const bigProjects = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  showGithubProfile: true, // Set true or false to show Contact profile using Github, defaults to true
   display: true, // Set false to hide this section, defaults to true
 };
 // Achievement Section
