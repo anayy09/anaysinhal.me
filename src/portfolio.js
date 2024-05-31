@@ -107,7 +107,7 @@ const educationInfo = {
     {
       schoolName: "Indian Institute of Technology Kanpur",
       logo: require("./assets/images/IITK.png"),
-      subHeader: "Non-Degree Student - Computer Science and Engineering",
+      subHeader: "Semester Exchange Student - Computer Science and Engineering",
       duration: "January 2024 - May 2024",
       desc: "I was selected to spend a semester at the esteemed IITK.",
       descBullets: [
@@ -197,7 +197,7 @@ const workExperiences = {
         "Worked on feature improvements.",
         "Handled internal arrangements.",
         "Collaborated within the team.",
-        "Acquired insights into web development processes.",
+        // "Acquired insights into web development processes.",
       ],
     },
     {
@@ -257,6 +257,18 @@ const bigProjects = {
   subtitle: "EXPLORE MY TECH PROJECTS",
   projects: [
     {
+      image: require("./assets/images/pollution.png"),
+      projectName: "Visual Analytics of Air Pollutants in India",
+      projectDesc:
+        "Interactive Air Quality Analysis Dashboard with Temporal Analysis. Made using D3.js.",
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/anayy09/Visual-Analytics-Of-Air-Pollutants-in-India",
+        },
+      ],
+    },
+    {
       image: require("./assets/images/stress.png"),
       projectName: "Stress Detection using Wearable Sensors",
       projectDesc:
@@ -284,7 +296,7 @@ const bigProjects = {
       image: require("./assets/images/patch.png"),
       projectName: "Substance Use Disorder Treatment",
       projectDesc:
-        "Developed an innovative solution for monitoring and treating substance use disorders, involving a wearable patch and a mobile app.",
+        "Developed an solution for monitoring & treating SUDs, with a wearable patch & mobile app.",
       footerLink: [
         {
           name: "GitHub",
@@ -359,6 +371,17 @@ const achievementSection = {
   subtitle: " Some Certifications that I have done !",
 
   achievementsCards: [
+    {
+      title: "Privacy and Security in Online Social Media",
+      subtitle: "NPTEL - IIIT Hyderabad",
+      image: require("./assets/images/nptel.png"),
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1MB671l0pUN6diF1yvwpD5Lot00mKHn_G/view?usp=drivesdk",
+        },
+      ],
+    },
     {
       title: "Master C Programming with Data Structures",
       subtitle: "GeeksForGeeks",
@@ -436,17 +459,17 @@ const achievementSection = {
         },
       ],
     },
-    {
-      title: "Virtual Reality Specialization",
-      subtitle: "Coursera",
-      image: require("./assets/images/coursera1.png"),
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://www.coursera.org/account/accomplishments/specialization/certificate/T88EKHWMMHDF",
-        },
-      ],
-    },
+    // {
+    //   title: "Virtual Reality Specialization",
+    //   subtitle: "Coursera",
+    //   image: require("./assets/images/coursera1.png"),
+    //   footerLink: [
+    //     {
+    //       name: "Certification",
+    //       url: "https://www.coursera.org/account/accomplishments/specialization/certificate/T88EKHWMMHDF",
+    //     },
+    //   ],
+    // },
   ],
   display: true, // Set false to hide this section, defaults to true
 };
