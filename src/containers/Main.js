@@ -13,7 +13,6 @@ import Talks from "./talks/Talks";
 import Podcast from "./podcast/Podcast";
 import Education from "./education/Education";
 import ScrollToTopButton from "./topbutton/Top";
-import Chatbot from "./chatbot/Chatbot";
 import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";
@@ -67,7 +66,6 @@ const Main = () => {
             <Profile />
             <Footer />
             <ScrollToTopButton />
-            <Chatbot />
           </>
         )}
       </StyleProvider>

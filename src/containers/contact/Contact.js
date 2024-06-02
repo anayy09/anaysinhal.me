@@ -1,9 +1,9 @@
-import React, {useContext, useRef, useState} from "react";
+import React, { useContext, useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.scss";
-import {contactInfo} from "../../portfolio";
+import { contactInfo } from "../../portfolio";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import {Fade} from "react-reveal";
+import { Fade } from "react-reveal";
 import emaillottie from "../../assets/lottie/mail";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
@@ -14,11 +14,15 @@ export default function Contact() {
   const [message, setMessage] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
 
   const form = useRef();
 
-  const sendEmail = e => {
+  useEffect(() => {
+    emailjs.init("_WVNOma-APMkcwZBS");
+  }, []);
+
+  const sendEmail = (e) => {
     e.preventDefault();
 
     // Form validation
@@ -32,26 +36,26 @@ export default function Contact() {
       return;
     }
 
-    emailjs
-      .sendForm(
-        "service_j92dcl3",
-        "template_lgkonqp",
-        form.current,
-        "s9-qtKo5GbHojHOfg"
-      )
-      .then(
-        result => {
-          console.log(result.text);
-          console.log("Message Sent");
-          setIsSubmitted(true);
-          setName("");
-          setEmail("");
-          setMessage("");
-        },
-        error => {
-          console.log(error.text);
-        }
-      );
+    const btn = document.getElementById("button");
+    btn.value = "Sending...";
+
+    const serviceID = "default_service";
+    const templateID = "template_lgkonqp";
+
+    emailjs.sendForm(serviceID, templateID, form.current).then(
+      () => {
+        btn.value = "Send";
+        // alert("Sent!");
+        setIsSubmitted(true);
+        setName("");
+        setEmail("");
+        setMessage("");
+      },
+      (err) => {
+        btn.value = "Send";
+        alert(JSON.stringify(err));
+      }
+    );
   };
 
   return (
@@ -100,33 +104,36 @@ export default function Contact() {
                 <div className="contact-form">
                   <form ref={form} onSubmit={sendEmail}>
                     <div className="contact-name">
-                      <label>Name</label>
+                      <label htmlFor="user_name">Name</label>
                       <input
                         type="text"
                         name="user_name"
+                        id="user_name"
                         value={name}
-                        onChange={e => setName(e.target.value)}
+                        onChange={(e) => setName(e.target.value)}
                       />
                     </div>
                     <div className="contact-email">
-                      <label>Email</label>
+                      <label htmlFor="user_email">Email</label>
                       <input
                         type="email"
                         name="user_email"
+                        id="user_email"
                         value={email}
-                        onChange={e => setEmail(e.target.value)}
+                        onChange={(e) => setEmail(e.target.value)}
                       />
                     </div>
                     <div className="contact-message">
-                      <label>Message</label>
+                      <label htmlFor="message">Message</label>
                       <textarea
                         name="message"
+                        id="message"
                         value={message}
-                        onChange={e => setMessage(e.target.value)}
+                        onChange={(e) => setMessage(e.target.value)}
                       />
                     </div>
                     <div className="contact-send">
-                      <input type="submit" value="Send" />
+                      <input type="submit" id="button" value="Send" />
                     </div>
                   </form>
                 </div>
