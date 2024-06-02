@@ -25,6 +25,12 @@
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 20px;
 }
+.splash-view-info {
+  margin-top: 20px;
+  font-size: 14px;
+  color: grey;
+  text-align: center;
+}
 
 @media (max-width: 768px) {
   .splash-title-container {
