@@ -23,7 +23,7 @@ const greeting = {
   username: "Anay Sinhal",
   title: "Hi all, I'm Anay",
   subTitle: emoji(
-    "🚀 I'm a Computer Science undergrad excelling as a Full Stack Developer and AI/ML Enthusiast. Experienced in ReactJS, Django, TensorFlow, Keras, and more, I create digital brilliance through code, design, and machine learning."
+    "🚀 I'm a CS undergrad excelling as a Full Stack Developer & ML Enthusiast. Experienced in React, Django, TensorFlow, & more, I create digital brilliance through code & design."
   ),
   resumeLink: "/resume",
   displayGreeting: true,
