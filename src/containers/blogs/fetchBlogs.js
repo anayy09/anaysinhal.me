@@ -10,6 +10,7 @@ export const fetchBlogs = async () => {
               title
               brief
               url
+              slug
             }
           }
         }
