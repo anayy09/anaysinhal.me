@@ -34,7 +34,7 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/anayy09",
   linkedin: "https://www.linkedin.com/in/anaysinhal/",
-  gmail: "anay.sinhal@aol.com",
+  gmail: "anaysinhal.edu@gmail.com",
   instagram: "https://www.instagram.com/_anay09_/",
   twitter: "https://twitter.com/_anaysinhal_",
   display: true, // Set true to display this section, defaults to false
@@ -192,11 +192,10 @@ const workExperiences = {
       company: "GeeksforGeeks, Noida",
       companylogo: require("./assets/images/geeks.png"),
       date: "May 2024 – Present",
-      desc: "Gained hands-on experience in PHP, Vanilla JS, ReactJS, NextJS, and Django.",
+      desc: "Gaining hands-on experience in NextJS, ReactJS, Django, PHP and Wordpress.",
       descBullets: [
-        "Worked on feature improvements.",
-        "Handled internal arrangements.",
-        "Collaborated within the team.",
+        "Working on feature improvements and enhancements.",
+        "Handling internal arrangements and learn the work-flow.",
         // "Acquired insights into web development processes.",
       ],
     },
@@ -205,7 +204,7 @@ const workExperiences = {
       company: "SVNIT Surat",
       companylogo: require("./assets/images/SVNIT.png"),
       date: "May 2024 – June 2024",
-      desc: "Worked on a research project under Dr. Bhavesh N. Gohil, Assistant Professor, Dept. of CSE, SVNIT Surat.",
+      desc: "Working on a research project under Dr. Bhavesh N. Gohil, Assistant Professor, Dept. of CSE, SVNIT Surat.",
       descBullets: [
         "Project: Depression Detection using AI and Machine Learning Techniques",
       ],
@@ -225,11 +224,10 @@ const workExperiences = {
       company: "Dexpert Systems, Pune",
       companylogo: require("./assets/images/Dexpert.png"),
       date: "June 2023 – July 2023",
-      desc: "Gained hands-on experience in Java Spring Boot, ReactJS, Zoho CRM, Java JSP, and PHP Laravel.",
+      desc: "Gained hands-on experience in Spring Boot, ReactJS, Zoho CRM, JSP, and PHP Laravel.",
       descBullets: [
         "Contributed to real-time projects.",
         "Interacted with clients.",
-        "Collaborated within the team.",
         "Acquired insights into the software development lifecycle.",
       ],
     },
