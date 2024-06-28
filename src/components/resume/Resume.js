@@ -6,37 +6,23 @@ const Resume = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Update the paths to point to the public directory
-  const resumePDF = "Resume_Anay_Sinhal.pdf";
-  const resumePage1 = "Resume_Anay_Sinhal_01.jpg";
-  const resumePage2 = "Resume_Anay_Sinhal_02.jpg";
+  const resumePDFLink = "https://drive.google.com/file/d/1XLWIPPTgbKP-C4zJyiu-qVo0fmvjz38G/preview";
 
   return (
     <div>
-      <a
-        href={process.env.PUBLIC_URL + "/" + resumePDF}
+      {/* <a
+        href="https://drive.google.com/uc?export=download&id=1XLWIPPTgbKP-C4zJyiu-qVo0fmvjz38G"
         className="download-button"
         download="Resume_AS.pdf"
       >
         <i className="fa fa-download"></i>Download
-      </a>
+      </a> */}
       <div className="center-frame">
         <iframe
-          src={process.env.PUBLIC_URL + "/" + resumePDF + "#toolbar=0"}
-          type="application/pdf"
+          src={resumePDFLink}
           title="Anay Sinhal Resume"
           style={{ width: "100%", height: "100vh", border: "none" }}
         ></iframe>
-        <img
-          src={process.env.PUBLIC_URL + "/" + resumePage1}
-          className="mobile-image"
-          alt="Resume Page 1"
-        />
-        <img
-          src={process.env.PUBLIC_URL + "/" + resumePage2}
-          className="mobile-image"
-          alt="Resume Page 2"
-        />
       </div>
     </div>
   );

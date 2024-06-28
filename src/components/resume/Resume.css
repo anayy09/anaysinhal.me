@@ -19,15 +19,6 @@ iframe {
     height: 100vh;
     border: none;
 }
-
-.mobile-image {
-    width: 100%;
-    height: auto;
-    display: none;
-    object-fit: contain;
-    pointer-events: none;
-}
-
 .download-button {
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
@@ -52,13 +43,3 @@ iframe {
 .download-button i {
     margin-right: 5px;
 }
-
-/* @media screen and (max-width: 768px) {
-    iframe {
-        display: none;
-    }
-
-    .mobile-image {
-        display: block;
-    }
-} */
