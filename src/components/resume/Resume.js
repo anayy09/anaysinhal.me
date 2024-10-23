@@ -6,7 +6,7 @@ const Resume = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const resumePDFLink = "https://drive.google.com/file/d/1XLWIPPTgbKP-C4zJyiu-qVo0fmvjz38G/preview";
+  const resumePDFLink = "https://drive.google.com/file/d/1SzElZ1QV4C9Jh6PwfoD1qFRrj0362FQF/preview";
 
   return (
     <div>
